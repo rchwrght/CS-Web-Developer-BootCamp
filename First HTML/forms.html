@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+	<h1>Login Form</h1>
+	<!-- action - where the form sends the data to -->
+	<!-- method - what HTTP method (get/post) -->
+	<!-- forms operate at a block level -->
+	<!-- placeholder is what the user sees in the form -->
+	<!-- name is how the form saves the data for query later -->
+	<!-- two ways to create forms this is Syntax number 1 -->
+	<form action="http://www.wikipedia.org">
+		<label>
+			Username:
+			<input name="username" type="text" placeholder="username">
+		</label>
+		
+		<label>
+			Password:
+			<input name="password" type="password" placeholder="password">
+		</label>
+		<!-- <button>Login</button> -->
+		<input type="submit">
+	</form>
+	<!-- second syntax for creating forms -->
+	<h1>Second Login Form and Syntax</h1>
+	<form action="http://www.wikipedia.org">
+		<label for="email">Email:</label>
+		<input id="email" name="username" type="email" placeholder="email" required>
+		
+		<label for="password">Password:</label>
+		<input id="password" name="password" type="password" placeholder="password" required>
+
+		<!-- <button>Login</button> -->
+		<input type="submit">
+	</form>
+	<!-- radio buttons need a name that matches to create the choice -->
+	<!-- then use value to enable a later query about the choice -->
+	<form>
+		<label>
+			Radio Button:<input name="buttonChoice" type="radio" value="button1">
+		</label>
+
+		<label>
+			Radio Button2:<input name="buttonChoice" type="radio" value="button2">
+		</label>
+		<label>Checkbox Button:<input type="checkbox"></label>
+
+		<p>What's your favourite colour?</p>
+		<select name="colour">
+			<option>Red</option>
+			<option>Orange</option>
+			<option>Yellow</option>
+		</select>
+
+		<p>What's your mood?</p>
+		<select name="mood">
+			<option vale="Happy">:D</option>
+			<option value="Neutral">:|</option>
+			<option value="Angry">>:(</option>
+		</select>
+
+		<textarea name="bio" rows="10" cols="50">Write your bio here...</textarea>
+
+		<button>Go!</button>
+	</form>
+
+</body>
+</html>
